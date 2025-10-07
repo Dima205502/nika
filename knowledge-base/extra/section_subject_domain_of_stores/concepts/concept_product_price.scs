@@ -1,0 +1,13 @@
+concept_product_price
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+    [Цена]
+    (* <- lang_ru;; *);
+    [Product price]
+    (* <- lang_en;; *);
+
+
+=> nrel_note:
+    [Денежное выражение стоимости товара или услуги.]
+    (* <- lang_ru;; *);;

@@ -1,0 +1,47 @@
+nrel_located_in
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+    [расположен в]
+    (* <- lang_ru;; *);
+    [located in]
+    (* <- lang_en;; *);
+
+=> nrel_first_domain: concept_offline_store;
+=> nrel_second_domain: concept_store_region;
+
+=> nrel_definitional_domain:
+    ...
+    (* 
+        <= nrel_combination: {
+            concept_offline_store;
+            concept_store_region
+        };;
+    *);;
+
+<- rrel_key_sc_element:
+    ...
+    (* 
+        => nrel_main_idtf:
+            [Опр. (расположен в)]
+            (* <- lang_ru;; *);;
+        <- definition;;
+            <= nrel_sc_text_translation:
+                ...
+                (* 
+                    -> rrel_example:
+                        [«Расположен в» – бинарное ориентированное отношение, связывающее магазин и регион (или город), 
+                         где этот магазин находится.]
+                        (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants: {
+                concept_offline_store;
+                concept_store_region
+            };;
+    *);;

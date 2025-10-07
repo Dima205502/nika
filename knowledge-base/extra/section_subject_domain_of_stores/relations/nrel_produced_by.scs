@@ -1,0 +1,48 @@
+nrel_produced_by
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+    [произведён поставщиком]
+    (* <- lang_ru;; *);
+    [produced by]
+    (* <- lang_en;; *);
+
+=> nrel_first_domain: concept_product;
+=> nrel_second_domain: concept_supplier;
+
+=> nrel_definitional_domain:
+    ...
+    (*
+        <= nrel_combination: {
+            concept_product;
+            concept_supplier
+        };;
+    *);;
+
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (произведён поставщиком)]
+            (* <- lang_ru;; *);;
+        <- definition;;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> rrel_example:
+                        [«Произведён поставщиком» – бинарное ориентированное отношение, 
+                         связывающее товар и поставщика (или производителя), 
+                         который выпускает данный товар.]
+                        (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants: {
+                concept_product;
+                concept_supplier
+            };;
+    *);;

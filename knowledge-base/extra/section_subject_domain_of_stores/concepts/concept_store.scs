@@ -1,0 +1,21 @@
+concept_store
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+    [Магазин]
+    (* <- lang_ru;; *);
+    [Store]
+    (* <- lang_en;; *);
+
+<= nrel_inclusion:
+    concept_store_chain;
+
+=> nrel_note:
+    [Предприятие розничной торговли, оборудованное для продаж товаров и оказания услуг.]
+    (* <- lang_ru;; *);
+
+=> nrel_managed_by:
+    concept_manager;
+
+=> nrel_has_employee:
+    concept_employee;;

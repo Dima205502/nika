@@ -1,0 +1,20 @@
+concept_product
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+    [Товар] (* <- lang_ru;; *);
+    [Product] (* <- lang_en;; *);
+
+
+=> nrel_note:
+    [Продукт человеческого труда, предназначенный для продажи или обмена, способный удовлетворить потребности людей и предлагаемый рынку.]
+    (* <- lang_ru;; *);
+
+=> nrel_has_price:
+    concept_product_price;    
+
+=> nrel_belongs_to_category:
+    concept_product_category;
+
+=> nrel_produced_by:
+    concept_supplier;;

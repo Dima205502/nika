@@ -1,0 +1,13 @@
+concept_store_region
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+    [Страна магазина]
+    (* <- lang_ru;; *);
+    [Store region]
+    (* <- lang_en;; *);
+
+
+=> nrel_note:
+    [Местоположение, в котором находится магазин и осуществляется его деятельность.]
+    (* <- lang_ru;; *);;
