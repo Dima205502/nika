@@ -1,0 +1,32 @@
+concept_store_inventory
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+    [Инвентарь магазина]
+    (* <- lang_ru;; *);
+    [Store inventory]
+    (* <- lang_en;; *);
+
+=> nrel_note:
+    [Перечень товаров, находящихся в магазине на данный момент.]
+    (* <- lang_ru;; *);
+
+<= nrel_inclusion:
+    concept_active_inventory
+    (* => nrel_main_idtf:
+            [Активный инвентарь]
+            (* <- lang_ru;; *);
+       => nrel_note:
+            [Товары, доступные для продажи в данный момент.]
+            (* <- lang_ru;; *);
+    *);
+    concept_reserved_inventory
+    (* => nrel_main_idtf:
+            [Резервный инвентарь]
+            (* <- lang_ru;; *);
+       => nrel_note:
+            [Товары, отложенные или зарезервированные для клиентов.]
+            (* <- lang_ru;; *);
+    *);;
+

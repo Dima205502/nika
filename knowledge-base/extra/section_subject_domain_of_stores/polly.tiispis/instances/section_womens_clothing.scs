@@ -1,0 +1,11 @@
+section_womens_clothing
+<- concept_store_section;;
+
+=> nrel_main_idtf:
+    [Отдел женской одежды]
+    (* <- lang_ru;; *);
+    [Women's Clothing Section]
+    (* <- lang_en;; *);
+
+=> nrel_contains_section:
+    store_befree_nevsky;;

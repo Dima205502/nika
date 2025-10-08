@@ -1,0 +1,32 @@
+inventory_befree_nevsky
+<- concept_store_inventory;;
+
+=> nrel_main_idtf:
+    [Инвентарь магазина Befree Невский проспект]
+    (* <- lang_ru;; *);
+    [Befree Nevsky Inventory]
+    (* <- lang_en;; *);
+
+=> located_in:
+    store_befree_nevsky
+    (*
+        <- store;
+
+        => nrel_main_idtf:
+            [Магазин Befree, Невский проспект]
+            (* <- lang_ru;; *);
+            [Befree Store, Nevsky]
+            (* <- lang_en;; *);
+    *);
+
+=> has_product:
+    product_leather_jacket
+    (*
+        <- product;
+
+        => nrel_main_idtf:
+            [Кожаная куртка]
+            (* <- lang_ru;; *);
+            [Leather Jacket]
+            (* <- lang_en;; *);
+    *);;

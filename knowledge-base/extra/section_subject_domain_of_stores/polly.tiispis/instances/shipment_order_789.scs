@@ -1,0 +1,14 @@
+shipment_order_789
+<- concept_store_shipment;;
+
+=> nrel_main_idtf:
+    [Поставка №789]
+    (* <- lang_ru;; *);
+    [Shipment No. 789]
+    (* <- lang_en;; *);
+
+=> nrel_supplied_under_contract:
+    contract_supplier_fashion_inc;
+
+=> nrel_shipped_to_store:
+    store_befree_nevsky;;

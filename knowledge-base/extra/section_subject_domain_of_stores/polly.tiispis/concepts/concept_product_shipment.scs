@@ -1,0 +1,32 @@
+concept_product_shipment
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+    [Поставка товара]
+    (* <- lang_ru;; *);
+    [Product shipment]
+    (* <- lang_en;; *);
+
+=> nrel_note:
+    [Процесс доставки товара в магазин от поставщика.]
+    (* <- lang_ru;; *);
+
+<= nrel_inclusion:
+    concept_regular_shipment
+    (* => nrel_main_idtf:
+            [Регулярная поставка]
+            (* <- lang_ru;; *);
+       => nrel_note:
+            [Поставка товара в магазин с установленной периодичностью.]
+            (* <- lang_ru;; *);
+    *);
+    concept_one_time_shipment
+    (* => nrel_main_idtf:
+            [Одноразовая поставка]
+            (* <- lang_ru;; *);
+       => nrel_note:
+            [Поставка товара, осуществляемая один раз без планов повторения.]
+            (* <- lang_ru;; *);
+    *);;
+

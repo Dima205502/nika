@@ -1,0 +1,23 @@
+contract_supplier_fashion_inc
+<- concept_store_supplier_contract;;
+
+=> nrel_main_idtf:
+    [Договор с поставщиком Fashion Inc]
+    (* <- lang_ru;; *);
+    [Contract with Supplier Fashion Inc]
+    (* <- lang_en;; *);
+
+=> managed_by:
+    supplier_fashion_inc
+    (*
+        <- supplier;
+
+        => nrel_main_idtf:
+            [Поставщик Fashion Inc]
+            (* <- lang_ru;; *);
+            [Supplier Fashion Inc]
+            (* <- lang_en;; *);
+    *);
+
+=> contract_supplies:
+    store_befree_nevsky;;

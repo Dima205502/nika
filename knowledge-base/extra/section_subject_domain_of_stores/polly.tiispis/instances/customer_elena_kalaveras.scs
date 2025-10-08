@@ -1,0 +1,32 @@
+customer_elena_kalaveras
+<- concept_store_customer;;
+
+=> nrel_main_idtf:
+    [Елена Калаверас]
+    (* <- lang_ru;; *);
+    [Elena Kalaveras]
+    (* <- lang_en;; *);
+
+=> nrel_served_by:
+    employee_alisa_dupel
+    (*
+        <- employee;
+
+        => nrel_main_idtf:
+            [Алиса Дюпель]
+            (* <- lang_ru;; *);
+            [Alisa Dupel]
+            (* <- lang_en;; *);
+    *);
+
+=> nrel_enrolled_in_loyalty_program:
+    gold_loyalty_program
+    (*
+        <- concept_store_loyalty_program;
+
+        => nrel_main_idtf:
+            [Золотая программа]
+            (* <- lang_ru;; *);
+            [Gold Loyalty Program]
+            (* <- lang_en;; *);
+    *);;

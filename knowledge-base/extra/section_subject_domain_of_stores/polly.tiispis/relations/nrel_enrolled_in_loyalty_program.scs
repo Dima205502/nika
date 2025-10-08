@@ -1,0 +1,41 @@
+nrel_enrolled_in_loyalty_program
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+    [зарегистрирован в программе лояльности]
+    (* <- lang_ru;; *);
+    [enrolled in loyalty program]
+    (* <- lang_en;; *);
+
+=> nrel_first_domain: concept_store_customer;
+=> nrel_second_domain: concept_store_loyalty_program;
+
+=> nrel_definitional_domain:
+    (*
+        <= nrel_combination: {
+            concept_store_customer;
+            concept_store_loyalty_program
+        };;
+    *);
+
+<- rrel_key_sc_element:
+    (*
+        => nrel_main_idtf:
+            [Опр. (зарегистрирован в программе лояльности)]
+            (* <- lang_ru;; *);
+        <- definition;;
+            <= nrel_sc_text_translation:
+                (*
+                    -> rrel_example:
+                        [«Зарегистрирован в программе лояльности» – бинарное ориентированное отношение,
+                        связывающее покупателя с программой лояльности, в которой он участвует.]
+                        (* <- lang_ru;; *);
+                *);
+    *);;
+

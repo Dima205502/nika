@@ -1,0 +1,32 @@
+concept_store_supplier_contract
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+    [Договор с поставщиком]
+    (* <- lang_ru;; *);
+    [Supplier contract]
+    (* <- lang_en;; *);
+
+=> nrel_note:
+    [Юридическое соглашение между магазином и поставщиком товаров.]
+    (* <- lang_ru;; *);
+
+<= nrel_inclusion:
+    concept_long_term_contract
+    (* => nrel_main_idtf:
+            [Долгосрочный договор]
+            (* <- lang_ru;; *);
+       => nrel_note:
+            [Договор на поставку товаров в течение длительного периода.]
+            (* <- lang_ru;; *);
+    *);
+    concept_short_term_contract
+    (* => nrel_main_idtf:
+            [Краткосрочный договор]
+            (* <- lang_ru;; *);
+       => nrel_note:
+            [Договор на поставку товаров на ограниченный период.]
+            (* <- lang_ru;; *);
+    *);;
+

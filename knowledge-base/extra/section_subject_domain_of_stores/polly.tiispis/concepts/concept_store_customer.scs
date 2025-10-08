@@ -1,0 +1,32 @@
+concept_store_customer
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+    [Покупатель магазина]
+    (* <- lang_ru;; *);
+    [Store customer]
+    (* <- lang_en;; *);
+
+=> nrel_note:
+    [Лицо, приобретающее товары или услуги в магазине.]
+    (* <- lang_ru;; *);
+
+(* Например, могут быть подтипы покупателей *)
+<= nrel_inclusion:
+    concept_regular_customer
+    (* => nrel_main_idtf:
+            [Постоянный покупатель]
+            (* <- lang_ru;; *);
+       => nrel_note:
+            [Покупатель, регулярно совершающий покупки в магазине.]
+            (* <- lang_ru;; *);
+    *);
+    concept_guest_customer
+    (* => nrel_main_idtf:
+            [Гостевой покупатель]
+            (* <- lang_ru;; *);
+       => nrel_note:
+            [Покупатель, совершающий разовые или нерегулярные покупки.]
+            (* <- lang_ru;; *);
+    *);;
