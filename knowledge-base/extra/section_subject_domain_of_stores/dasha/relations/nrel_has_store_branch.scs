@@ -1,0 +1,47 @@
+nrel_has_store_branch
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- transitive_relation;
+
+=> nrel_main_idtf:
+    [владеет филиалом]
+    (* <- lang_ru;; *);
+    [has store branch]
+    (* <- lang_en;; *);
+
+=> nrel_first_domain: concept_store_chain;
+=> nrel_second_domain: concept_store_branch;
+
+=> nrel_definitional_domain:
+    ...
+    (*
+        <= nrel_combination: {
+            concept_store_chain;
+            concept_store_branch
+        };;
+    *);;
+
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (владеет филиалом)]
+            (* <- lang_ru;; *);;
+        <- definition;;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> rrel_example:
+                        [«Владеет филиалом» – бинарное ориентированное транзитивное отношение, 
+                         связывающее торговую сеть и филиал, который является ее частью.]
+                        (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants: {
+                concept_store_chain;
+                concept_store_branch
+            };;
+    *);;

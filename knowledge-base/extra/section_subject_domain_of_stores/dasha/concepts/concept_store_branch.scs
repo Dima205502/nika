@@ -1,0 +1,15 @@
+concept_store_branch
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+    [Филиал торговой сети]
+    (* <- lang_ru;; *);
+    [Store branch]
+    (* <- lang_en;; *);
+
+=> nrel_belongs_to_store_chain:
+    concept_store_chain;
+
+=> nrel_note:
+    [Торговый объект, принадлежащий одному или нескольким субъектам торговли, действующие под единым управлением, брендом и с общей системой закупок и сбыта.]
+    (* <- lang_ru;; *);;
