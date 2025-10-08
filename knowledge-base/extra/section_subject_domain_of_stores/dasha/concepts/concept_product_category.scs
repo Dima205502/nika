@@ -1,0 +1,19 @@
+concept_product_category
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+    [Категория продуктов]
+    (* <- lang_ru;; *);
+    [Product category]
+    (* <- lang_en;; *);
+
+<= nrel_inclusion:
+    concept_condition
+    (* => nrel_main_idtf:
+            [состояние]
+            (* <- lang_ru;; *);;
+    *);
+
+=> nrel_note:
+    [Группа схожих товаров, которые покупатели воспринимают как взаимозаменяемые или дополняющие друг друга.]
+    (* <- lang_ru;; *);;

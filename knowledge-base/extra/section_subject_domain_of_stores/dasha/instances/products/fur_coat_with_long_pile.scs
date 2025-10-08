@@ -1,0 +1,34 @@
+fur_coat_with_long_pile
+<-concept_store_chain;;
+
+fur_coat_with_long_pile => nrel_main_idtf:
+     [Шуба короткая с длинным ворсом](* <-lang_ru;; *);
+     [The fur coat with a long pile](* <-lang_en;; *);
+	
+    => nrel_has_price:
+		    five_nine_nine_nine;
+
+    => nrel_belongs_to_category:
+        category_cloths;
+
+    => nrel_produced_by:
+        supplier_fashion_inc;
+
+    => nrel_note:
+    [Короткая женская шуба свободного кроя с длинным ворсом и искусственным утеплителем. 
+    Отложной рубашечный воротник. Длинные свободные рукава с прямыми манжетами и спущенной 
+    линией плеча. Застежка на кнопки по всей длине спереди.]
+    (* <- lang_ru;; *);;
+
+
+
+fur_coat_with_long_pile <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Шуба короткая с длинным ворсом)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://coat.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

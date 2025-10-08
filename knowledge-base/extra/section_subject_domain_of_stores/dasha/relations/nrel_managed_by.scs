@@ -1,0 +1,47 @@
+nrel_managed_by
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+    [управляется]
+    (* <- lang_ru;; *);
+    [managed by]
+    (* <- lang_en;; *);
+
+=> nrel_first_domain: concept_store;
+=> nrel_second_domain: concept_manager;
+
+=> nrel_definitional_domain:
+    ...
+    (*
+        <= nrel_combination: {
+            concept_store;
+            concept_manager
+        };;
+    *);;
+
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (управляется)]
+            (* <- lang_ru;; *);;
+        <- definition;;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> rrel_example:
+                        [«Управляется» – бинарное ориентированное отношение, связывающее магазин и менеджера, 
+                         который отвечает за организацию его работы.]
+                        (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants: {
+                concept_store;
+                concept_manager
+            };;
+    *);;

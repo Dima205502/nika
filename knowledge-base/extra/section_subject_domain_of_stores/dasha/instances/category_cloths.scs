@@ -1,0 +1,10 @@
+category_cloths
+<- concept_product_category;;
+
+category_cloths => nrel_main_idtf:
+    [Одежда] (* <- lang_ru;; *);
+    [Cloths] (* <- lang_en;; *);
+
+    => nrel_note:
+    [Одежда — категория изделий, надеваемых человеком и несущих утилитарные и эстетические функции.]
+    (* <- lang_ru;; *);;

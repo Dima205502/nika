@@ -1,0 +1,14 @@
+store_branch_befree_nevsky
+<- concept_store_branch;;
+
+store_branch_befree_nevsky => nrel_main_idtf:
+    [Филиал befree Невский проспект, Санкт-Петербург] (* <- lang_ru;; *);
+    [befree branch Nevsky Ave, Saint Petersburg] (* <- lang_en;; *);
+    => nrel_located_in:
+        store_region_spb;
+    => nrel_managed_by:
+        darya_nikifarava;
+
+    => nrel_note:
+    [Магазин befree по адресу Невский пр., 96/1, Санкт-Петербург, Россия, 191025]
+    (* <- lang_ru;; *);;

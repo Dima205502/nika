@@ -1,0 +1,11 @@
+alisa_dupel
+<-concept_store_manager;;
+
+alisa_dupel => nrel_main_idtf:
+     [Алиса Дюпель](* <-lang_ru;; *);
+     [Alisa Dupel](* <-lang_en;; *);
+
+    => nrel_note:
+    [Алиса Дюпель, опыт раюоты 3 года, является кассиром в магазине befree по адресу Невский пр., 96/1, Санкт-Петербург.]
+    (* <- lang_ru;; *);;
+

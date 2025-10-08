@@ -1,0 +1,11 @@
+store_region_russia
+<-concept_store_region;;
+
+store_region_russia => nrel_main_idtf:
+     [Россия](* <-lang_ru;; *);
+     [Russia](* <-lang_en;; *);
+
+
+    => nrel_note:
+    [Россия или Российская Федерация - государство, расположенное в восточной части Европы и северной части Азии.]
+    (* <- lang_ru;; *);;

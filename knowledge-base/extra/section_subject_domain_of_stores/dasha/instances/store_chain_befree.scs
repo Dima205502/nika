@@ -1,0 +1,29 @@
+store_chain_befree
+<-concept_store_chain;;
+
+store_chain_befree => nrel_main_idtf:
+     [Сеть магазинов Befree](* <-lang_ru;; *);
+     [Store chain Befree](* <-lang_en;; *);
+	
+    => nrel_managed_by:
+		anton_letushev;
+
+    => nrel_located_in:
+        store_region_russia;
+
+    => nrel_note:
+    [Сеть befree — российская компания, специализирующаяся на продаже модной одежды и аксессуаров для молодежи.]
+    (* <- lang_ru;; *);;
+
+
+
+store_chain_befree <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Befree)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://befree.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

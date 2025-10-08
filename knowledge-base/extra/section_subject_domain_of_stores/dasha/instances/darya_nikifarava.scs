@@ -1,0 +1,11 @@
+darya_nikifarava
+<-concept_store_manager;;
+
+darya_nikifarava => nrel_main_idtf:
+     [Дарья Никифорова](* <-lang_ru;; *);
+     [Darya Nikiforova](* <-lang_en;; *);
+
+    => nrel_note:
+    [Дарья Никофорова является менеджером магазина befree по адресу Невский пр., 96/1, Санкт-Петербург.]
+    (* <- lang_ru;; *);;
+

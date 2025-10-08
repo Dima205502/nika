@@ -1,0 +1,138 @@
+section_subject_domain_of_stores
+=> nrel_main_idtf:
+    [Раздел. Предметная область магазинов]
+    (* <- lang_ru;; *);
+    [Section. Subject domain of stores]
+    (* <- lang_en;; *);
+
+<= nrel_section_decomposition:
+{
+    section_subject_domain_of_retail_trade
+    (*
+        => nrel_main_idtf:
+            [Раздел. Предметная область розничной торговли]
+            (* <- lang_ru;; *);;
+    *);
+    section_subject_domain_of_e_commerce
+    (*
+        => nrel_main_idtf:
+            [Раздел. Предметная область электронной коммерции]
+            (* <- lang_ru;; *);;
+    *);
+    section_subject_domain_of_assortment
+    (*
+        => nrel_main_idtf:
+            [Раздел. Предметная область торговли и ассортимента]
+            (* <- lang_ru;; *);;
+    *);
+};
+
+<- non_atomic_section;;
+
+section_subject_domain_of_stores = [*
+    subject_domain_of_stores
+    <- sc_node_struct;
+    => nrel_main_idtf:
+        [Предметная область магазинов] (* <- lang_ru;; *);
+        [Subject domain of stores] (* <- lang_en;; *);
+    <- subject_domain;
+
+    => nrel_private_subject_domain:
+        subject_domain_of_retail_trade
+        (*
+            => nrel_main_idtf:
+                [Предметная область розничной торговли]
+                (* <- lang_ru;; *);;
+        *);
+        subject_domain_of_e_commerce
+        (*
+            => nrel_main_idtf:
+                [Предметная область электронной коммерции]
+                (* <- lang_ru;; *);;
+        *);
+        subject_domain_of_assortment
+        (*
+            => nrel_main_idtf:
+                [Предметная область торговли и ассортимента]
+                (* <- lang_ru;; *);;
+        *);
+
+
+    -> rrel_maximum_studied_object_class:
+        concept_store;
+        concept_product;
+        concept_store_customer;;
+
+    -> rrel_not_maximum_studied_object_class:
+        concept_offline_store;
+        concept_employee;
+        concept_store_manager;
+        concept_cashier;
+        concept_supplier;
+        concept_product_category;
+        concept_product_price;
+        concept_store_chain;
+        concept_store_branch;
+        concept_store_region;
+        concept_store_inventory;
+        concept_store_promotion;
+        concept_store_supplier_contract;
+        concept_store_shipment;
+        concept_store_section;
+        concept_store_hours;
+        concept_store_loyalty_program;;
+
+    -> rrel_explored_relation:
+        nrel_located_in;
+        nrel_has_employee;
+        nrel_managed_by;
+        nrel_belongs_to_category;
+        nrel_produced_by;
+        nrel_has_price;
+        nrel_has_store_branch;
+        nrel_served_by;
+        nrel_offers_promotion;
+        nrel_has_inventory;
+        nrel_supplied_under_contract;
+        nrel_contains_section;
+        nrel_enrolled_in_loyalty_program;
+        nrel_has_working_hours;;
+
+*];;
+
+section_subject_domain_of_medicine 
+-> rrel_key_sc_element:
+   concept_store;
+   concept_product;
+   concept_store_customer;
+   concept_offline_store;
+   concept_employee;
+   concept_store_manager;
+   concept_cashier;
+   concept_supplier;
+   concept_product_category;
+   concept_product_price;
+   concept_store_chain;
+   concept_store_branch;
+   concept_store_region;
+   concept_store_inventory;
+   concept_store_promotion;
+   concept_store_supplier_contract;
+   concept_store_shipment;
+   concept_store_section;
+   concept_store_hours;
+   concept_store_loyalty_program;
+   nrel_located_in;
+   nrel_has_employee;
+   nrel_managed_by;
+   nrel_belongs_to_category;
+   nrel_produced_by;
+   nrel_has_price;
+   nrel_has_store_branch;
+   nrel_served_by;
+   nrel_offers_promotion;
+   nrel_has_inventory;
+   nrel_supplied_under_contract;
+   nrel_contains_section;
+   nrel_enrolled_in_loyalty_program;
+   nrel_has_working_hours;;

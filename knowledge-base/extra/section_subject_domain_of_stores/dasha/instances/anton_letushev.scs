@@ -1,0 +1,23 @@
+anton_letushev
+<-concept_store_manager;;
+
+anton_letushev => nrel_main_idtf:
+     [Антон Летушев](* <-lang_ru;; *);
+     [Anton Letushev](* <-lang_en;; *);
+
+    => nrel_note:
+    [Антон Летушев — гендиректор крупнейшей в России компании по продаже одежды Melon Fashion Group.]
+    (* <- lang_ru;; *);;
+
+
+
+anton_letushev <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Антон Летушев)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://anton.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

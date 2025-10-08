@@ -1,0 +1,11 @@
+store_region_spb
+<- concept_store_region;;
+
+store_region_spb => nrel_main_idtf:
+    [Санкт-Петербург] (* <- lang_ru;; *);
+    [Saint Petersburg] (* <- lang_en;; *);
+
+
+    => nrel_note:
+    [Санкт-Петербург – русский портовый город на побережье Балтийского моря.]
+    (* <- lang_ru;; *);;

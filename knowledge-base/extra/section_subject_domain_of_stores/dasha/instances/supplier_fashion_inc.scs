@@ -1,0 +1,12 @@
+supplier_fashion_inc
+<- concept_supplier;;
+
+supplier_fashion_inc => nrel_main_idtf:
+    [ООО Fashion Inc.] (* <- lang_ru;; *);
+    [LLC Fashion Inc.] (* <- lang_en;; *);
+
+    
+    => nrel_note:
+    [ООО Fashion Inc. - компания-поставщик товаров в категории одежда из Санкт-Петербурга.]
+    (* <- lang_ru;; *);;
+;;
