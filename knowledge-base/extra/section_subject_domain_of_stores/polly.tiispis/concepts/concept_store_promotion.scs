@@ -1,0 +1,32 @@
+concept_store_promotion
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+    [Акция магазина]
+    (* <- lang_ru;; *);
+    [Store promotion]
+    (* <- lang_en;; *);
+
+=> nrel_note:
+    [Мероприятие или программа, направленная на стимулирование продаж товаров.]
+    (* <- lang_ru;; *);
+
+<= nrel_inclusion:
+    concept_discount_promotion
+    (* => nrel_main_idtf:
+            [Скидочная акция]
+            (* <- lang_ru;; *);
+       => nrel_note:
+            [Акция, предусматривающая снижение цены на товар.]
+            (* <- lang_ru;; *);
+    *);
+    concept_gift_promotion
+    (* => nrel_main_idtf:
+            [Подарочная акция]
+            (* <- lang_ru;; *);
+       => nrel_note:
+            [Акция, предполагающая получение подарков или бонусов при покупке.]
+            (* <- lang_ru;; *);
+    *);;
+

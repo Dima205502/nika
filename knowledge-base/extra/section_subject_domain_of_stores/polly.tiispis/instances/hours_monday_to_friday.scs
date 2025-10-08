@@ -1,0 +1,11 @@
+hours_monday_to_friday
+<- concept_store_hours;;
+
+=> nrel_main_idtf:
+    [Часы работы: Пн-Пт 10:00-21:00]
+    (* <- lang_ru;; *);
+    [Working Hours: Mon-Fri 10:00-21:00]
+    (* <- lang_en;; *);
+
+=> nrel_has_working_hours:
+    store_befree_nevsky;;

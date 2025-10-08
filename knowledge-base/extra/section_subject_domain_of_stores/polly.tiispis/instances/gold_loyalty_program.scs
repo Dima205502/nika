@@ -1,0 +1,8 @@
+gold_loyalty_program
+<- concept_store_loyalty_program;;
+
+=> nrel_main_idtf:
+    [Золотая программа лояльности]
+    (* <- lang_ru;; *);
+    [Gold Loyalty Program]
+    (* <- lang_en;; *);;

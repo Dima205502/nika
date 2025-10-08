@@ -1,0 +1,11 @@
+promo_summer_discount
+<- concept_store_promotion;;
+
+=> nrel_main_idtf:
+    [Летняя распродажа]
+    (* <- lang_ru;; *);
+    [Summer Sale]
+    (* <- lang_en;; *);
+
+=> nrel_offers_promotion:
+    store_befree_nevsky;;

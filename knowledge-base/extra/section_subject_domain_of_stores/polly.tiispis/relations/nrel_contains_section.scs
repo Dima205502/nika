@@ -1,0 +1,40 @@
+nrel_contains_section
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+    [содержит отдел]
+    (* <- lang_ru;; *);
+    [contains section]
+    (* <- lang_en;; *);
+
+=> nrel_first_domain: concept_store;
+=> nrel_second_domain: concept_store_section;
+
+=> nrel_definitional_domain:
+    (*
+        <= nrel_combination: {
+            concept_store;
+            concept_store_section
+        };;
+    *);
+
+<- rrel_key_sc_element:
+    (*
+        => nrel_main_idtf:
+            [Опр. (содержит отдел)]
+            (* <- lang_ru;; *);
+        <- definition;;
+            <= nrel_sc_text_translation:
+                (*
+                    -> rrel_example:
+                        [«Содержит отдел» – бинарное ориентированное отношение,
+                        связывающее магазин с его структурными отделами.]
+                        (* <- lang_ru;; *);
+                *);
+    *);;
