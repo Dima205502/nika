@@ -1,0 +1,25 @@
+concept_user_account
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+    [Аккаунт пользователя] (* <- lang_ru;; *);
+    [User Account] (* <- lang_en;; *);
+
+=> nrel_note:
+    [Цифровой профиль клиента в системе онлайн-магазина, содержащий данные авторизации,
+     историю заказов, сохранённые адреса доставки и привязку к программе лояльности.
+     Служит для персонализации и идентификации store_customer в онлайн-среде.]
+    (* <- lang_ru;; *);
+
+=> nrel_represents_customer:
+    concept_store_customer;
+
+=> nrel_participates_in_loyalty:
+    concept_store_loyalty_program;
+
+=> nrel_has_loyalty_tier:
+    concept_loyalty_tier;
+
+=> nrel_owns_web_sessions:
+    concept_web_session;;

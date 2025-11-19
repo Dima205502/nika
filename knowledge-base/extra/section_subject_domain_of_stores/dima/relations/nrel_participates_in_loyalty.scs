@@ -1,0 +1,42 @@
+nrel_participates_in_loyalty
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- nontransitive_relation;
+
+=> nrel_main_idtf:
+    [участвует в программе лояльности*]
+    (* <- lang_ru;; *);
+    [participates in loyalty program*]
+    (* <- lang_en;; *);
+
+=> nrel_first_domain: concept_user_account;
+=> nrel_second_domain: concept_store_loyalty_program;
+
+=> nrel_definitional_domain:
+    ...
+    (*
+        <= nrel_combination: {
+            concept_user_account;
+            concept_store_loyalty_program
+        };;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (участвует в программе лояльности*)]
+            (* <- lang_ru;; *);;
+        <- definition;;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> rrel_example:
+                        [«Участвует в программе лояльности» – отношение, фиксирующее привязку аккаунта пользователя к программе лояльности магазина.]
+                        (* <- lang_ru;; *);;
+                *);;
+    *);;

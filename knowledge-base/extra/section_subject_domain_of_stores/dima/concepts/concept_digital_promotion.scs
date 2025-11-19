@@ -1,0 +1,15 @@
+concept_digital_promotion
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+    [Цифровая акция] (* <- lang_ru;; *);
+    [Digital Promotion] (* <- lang_en;; *);
+
+=> nrel_note:
+    [Маркетинговое предложение, распространяемое через онлайн-каналы
+     (сайт, email, push-уведомления), например, промокоды, персонализированные скидки или баннеры.]
+    (* <- lang_ru;; *);
+
+=> nrel_applies_to_product:
+    concept_product;;

@@ -1,0 +1,43 @@
+nrel_has_total_price
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- nontransitive_relation;
+
+=> nrel_main_idtf:
+    [имеет итоговую стоимость*]
+    (* <- lang_ru;; *);
+    [has total price*]
+    (* <- lang_en;; *);
+
+=> nrel_first_domain: concept_online_order;
+=> nrel_second_domain: concept_product_price;
+
+=> nrel_definitional_domain:
+    ...
+    (*
+        <= nrel_combination: {
+            concept_online_order;
+            concept_product_price
+        };;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (имеет итоговую стоимость*)]
+            (* <- lang_ru;; *);;
+        <- definition;;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> rrel_example:
+                        [«Имеет итоговую стоимость» – отношение, связывающее 
+                        онлайн-заказ с суммарной стоимостью всех позиций в нем.]
+                        (* <- lang_ru;; *);;
+                *);;
+    *);;

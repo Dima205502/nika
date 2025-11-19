@@ -1,0 +1,23 @@
+online_order_elena_20251027
+<- concept_online_order;
+
+=> nrel_main_idtf:
+    [Онлайн-заказ Елены Калаверас от 27.10.2025]
+    (* <- lang_ru;; *);
+    [Elena Kalaveras online order 2025-10-27]
+    (* <- lang_en;; *);
+
+=> nrel_placed_by:
+    user_account_elena_kalaveras;
+
+=> nrel_includes_product:
+    fur_coat_with_long_pile;
+
+=> nrel_assigned_to_route:
+    delivery_route_spb_center_20251028;
+
+=> nrel_fulfilled_by_store:
+    store_branch_befree_nevsky;
+
+=> nrel_has_total_price:
+    five_nine_nine_nine;;

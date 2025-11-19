@@ -1,0 +1,8 @@
+web_session_20251027_elena
+<- concept_web_session;
+
+=> nrel_main_idtf:
+    [Веб-сессия Елены Калаверас от 27.10.2025, 18:30–18:45]
+    (* <- lang_ru;; *);
+    [Elena Kalaveras web session 2025-10-27 18:30]
+    (* <- lang_en;; *);;

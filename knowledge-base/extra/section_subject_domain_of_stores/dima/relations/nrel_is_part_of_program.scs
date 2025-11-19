@@ -1,0 +1,43 @@
+nrel_is_part_of_program
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- nontransitive_relation;
+
+=> nrel_main_idtf:
+    [привязано к программе лояльности*]
+    (* <- lang_ru;; *);
+    [is part of program*]
+    (* <- lang_en;; *);
+
+=> nrel_first_domain: concept_loyalty_tier;
+=> nrel_second_domain: concept_store_loyalty_program;
+
+=> nrel_definitional_domain:
+    ...
+    (*
+        <= nrel_combination: {
+            concept_loyalty_tier;
+            concept_store_loyalty_program
+        };;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (привязано к программе лояльности*)]
+            (* <- lang_ru;; *);;
+        <- definition;;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> rrel_example:
+                        [«Привязано к программе лояльности» – отношение, связывающее 
+                        уровень градации участника с его программой лояльности.]
+                        (* <- lang_ru;; *);;
+                *);;
+    *);;

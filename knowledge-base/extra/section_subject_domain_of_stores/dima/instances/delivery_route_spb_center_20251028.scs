@@ -1,0 +1,12 @@
+delivery_route_spb_center_20251028
+<- concept_delivery_route;
+
+=> nrel_main_idtf:
+    [Маршрут доставки по центру СПб на 28.10.2025]
+    (* <- lang_ru;; *);
+    [Central Saint Petersburg delivery route 2025-10-28]
+    (* <- lang_en;; *);
+
+=> nrel_note:
+    [Маршрут включает 12 адресов в Адмиралтейском и Центральном районах; отправка в 1000 из филиала Невский.]
+    (* <- lang_ru;; *);;

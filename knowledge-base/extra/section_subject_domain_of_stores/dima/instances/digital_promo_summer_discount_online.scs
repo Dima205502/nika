@@ -1,0 +1,15 @@
+digital_promo_summer_discount_online
+<- concept_digital_promotion;
+
+=> nrel_main_idtf:
+    [Цифровая акция «Летняя скидка» (онлайн)]
+    (* <- lang_ru;; *);
+    [Digital Summer Discount Promotion]
+    (* <- lang_en;; *);
+
+=> nrel_note:
+    [Персонализированная онлайн-скидка 15% на верхнюю одежду, отправленная по email 25.10.2025]
+    (* <- lang_ru;; *);
+
+=> nrel_applies_to_product:
+    fur_coat_with_long_pile;;

@@ -1,0 +1,18 @@
+concept_inventory_reservation
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+    [Резервирование товара] (* <- lang_ru;; *);
+    [Inventory Reservation] (* <- lang_en;; *);
+
+=> nrel_note:
+    [Временное блокирование единиц товара в складском запасе магазина
+     под конкретный онлайн-заказ или запрос на самовывоз для предотвращения двойной продажи.]
+    (* <- lang_ru;; *);
+
+=> nrel_reserves_from_inventory:
+    concept_store_inventory;
+
+=> nrel_reserved_by_the_order:
+    concept_online_order;;

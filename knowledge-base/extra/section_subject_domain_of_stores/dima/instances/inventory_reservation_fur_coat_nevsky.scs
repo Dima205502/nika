@@ -1,0 +1,14 @@
+inventory_reservation_fur_coat_nevsky
+<- concept_inventory_reservation;
+
+=> nrel_main_idtf:
+    [Резервирование норковой шубы в филиале Невский]
+    (* <- lang_ru;; *);
+    [Fur coat inventory reservation at Nevsky branch]
+    (* <- lang_en;; *);
+
+=> nrel_reserves_from_inventory:
+    inventory_befree_nevsky;
+
+=> nrel_reserved_by_the_order:
+    online_order_elena_20251027;;

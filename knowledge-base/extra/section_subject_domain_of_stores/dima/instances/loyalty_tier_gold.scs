@@ -1,0 +1,15 @@
+loyalty_tier_gold
+<- concept_loyalty_tier;
+
+=> nrel_main_idtf:
+    [Золотой уровень лояльности]
+    (* <- lang_ru;; *);
+    [Gold Loyalty Tier]
+    (* <- lang_en;; *);
+
+=> nrel_note:
+    [Высший уровень программы лояльности: 10% кэшбэк, бесплатная доставка, приоритетное резервирование.]
+    (* <- lang_ru;; *);
+
+=> nrel_is_part_of_program:
+    gold_loyalty_program;;

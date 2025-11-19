@@ -1,0 +1,27 @@
+concept_online_order
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+    [Онлайн-заказ] (* <- lang_ru;; *);
+    [Online Order] (* <- lang_en;; *);
+
+=> nrel_note:
+    [Цифровой заказ, созданный клиентом через веб-сайт или мобильное приложение,
+     который может быть исполнен с доставкой или самовывозом из офлайн-магазина.]
+    (* <- lang_ru;; *);
+
+=> nrel_placed_by:
+    concept_user_account;
+
+=> nrel_includes_product:
+    concept_product;
+
+=> nrel_assigned_to_route:
+    concept_delivery_route;
+
+=> nrel_fulfilled_by_store:
+    concept_store;
+
+=> nrel_has_total_price:
+    concept_product_price;;

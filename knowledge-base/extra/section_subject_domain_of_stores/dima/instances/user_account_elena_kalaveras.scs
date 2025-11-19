@@ -1,0 +1,20 @@
+user_account_elena_kalaveras
+<- concept_user_account;
+
+=> nrel_main_idtf:
+    [Аккаунт Елены Калаверас]
+    (* <- lang_ru;; *);
+    [Elena Kalaveras user account]
+    (* <- lang_en;; *);
+
+=> nrel_represents_customer:
+    customer_elena_kalaveras;
+
+=> nrel_participates_in_loyalty:
+    gold_loyalty_program;
+
+=> nrel_has_loyalty_tier:
+    loyalty_tier_gold;
+
+=> nrel_owns_web_sessions:
+    web_session_20251027_elena;;

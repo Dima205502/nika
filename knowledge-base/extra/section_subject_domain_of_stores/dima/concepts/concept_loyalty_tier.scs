@@ -1,0 +1,15 @@
+concept_loyalty_tier
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+    [Уровень лояльности] (* <- lang_ru;; *);
+    [Loyalty Tier] (* <- lang_en;; *);
+
+=> nrel_note:
+    [Градация участника программы лояльности (например, «Бронзовый», «Серебряный», «Золотой»),
+     определяющая размер бонусов, скидок и привилегий на основе накопленной активности.]
+    (* <- lang_ru;; *);
+
+=> nrel_is_part_of_program:
+    concept_store_loyalty_program;;
